@@ -1,0 +1,131 @@
+main{
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.title {
+    text-align: center;
+}
+
+.title p{
+    margin: 2%  ;
+}
+
+form {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+button[type="submit"] {
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 2% 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-width: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button[type="submit"]:hover {
+    background-color: black;  
+    color: white;
+    border-width: 1px;
+}
+
+.gender-radio{
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+.gender-male{
+    flex-direction: row;
+    width: 15%;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+.check-box {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.check-box label {
+    font-weight: lighter;
+    font-size: 0.9rem;
+    margin-left: 1%;
+}
+
+
+@media screen and (max-width: 767px) {
+    main {
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+
+    form {
+        max-width: 90%;
+        padding: 30px;
+    }
+
+    button[type="submit"] {
+        padding: 2% 15%;
+        margin-left: 30%;
+        margin-right: 30%;
+
+    }
+
+    .gender-radio {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gender-male {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 0.5%;
+        margin-bottom: 1%;
+    }
+
+    .check-box label {
+        font-size: 0.8rem;
+        margin-left: 5px;
+    }
+}

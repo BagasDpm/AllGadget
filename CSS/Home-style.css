@@ -1,0 +1,103 @@
+main {
+    margin-bottom: 3%;
+}
+
+.banner-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner{
+    width: 85%;
+}
+
+span{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+main span{
+    display: flex;
+    font-size: 2rem;
+    text-decoration: underline;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+.card {
+    display: inline-table;
+    border-radius: 4px;
+    position: relative;
+    flex-direction: row;
+    margin-left: 140px;
+    margin-right: 80px;
+    justify-content: space-between;
+}
+
+.card .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card .info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .info {
+    opacity: 1;
+}
+
+.card .info .specs {
+    margin-top: 10px;
+}
+
+.card .info li {
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+.card .info li:before {
+    content: "-";
+    margin-right: 5px;
+}
+
+.details{
+    font-weight: 800;
+    color: black;
+}
+
+.price{
+    color: black;
+}
+
+.specs{
+    color: black ;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        display: block;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 20px;
+    }
+
+    .card .image img {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+}

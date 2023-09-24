@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllGadget | Register</title>
+    <link rel="stylesheet" href="./CSS/HeadFoot-style.css">
+    <link rel="stylesheet" href="./CSS/Register-style.css">
+</head>
+<body>
+    <header>
+        <img class="logo-header" src="./Assets/General/logo.png">
+        <nav>
+            <a class="navigation-bar" href="./Home.html">Home</a>
+            <a class="navigation-bar" href="./Gallery.html">Gallery</a>
+            <a class="navigation-bar" href="./FindUs.html">Find Us</a>
+            <a class="navigation-bar" href="./AboutUs.html">About Us</a>
+            <a style="background-color: black; color: white;" class="navigation-bar" href="./Register.html">Register</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="title">
+            <h2>Be a part of us</h2>
+            <p>Get special promotions by buying a member</p>
+        </div>
+        <form onsubmit="return FormValidation()">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" required><br> 
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br> 
+        
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required><br> 
+        
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone"  ><br>   
+
+            <label for="gender">Gender:</label>
+            <div class="gender-radio">
+                <div class="gender-male">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div class="gender-female">
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>   
+                
+            <div class="check-box">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to receive AllGadget Terms & Policy</label>
+            </div>
+        
+            <button type="submit" id="submit">Register</button>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="logo-footer">
+            <img src="./Assets/General/logo-white.png">
+        </div>
+        <span>COPYRIGHT © 2023 AllGadget INDONESIA. All right reserved</span>
+        <ol>
+            <a href="https://www.facebook.com/universitasbinanusantara?mibextid=ZbWKw">
+                <img src="./Assets/Medsos/facebook.png">
+            </a>
+            <a href="https://twitter.com/BINUS_UNIV?t=2x5F9RxORwfHKTbiH7DxVg&s=09">
+                <img src="./Assets/Medsos/twitter.png">
+            </a>
+            <a href="https://instagram.com/binusuniversityofficial?igshid=MzRlODBiNWFlZA==">
+                <img src="./Assets/Medsos/instagram.png">
+            </a>
+        </ol>
+    </footer>
+</body>
+<script src="./Script/Register-script.js"></script>
+</html>
